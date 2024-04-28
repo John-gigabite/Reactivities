@@ -33,7 +33,7 @@ export default observer( function ActivityList(){
                                 <Button onClick={() => activityStore.selectActivity(activity.id)} floated='right' content='View' color='blue'/>
                                 <Button
                                     name={activity.id}
-                                    loading={loading && target === activity.id}
+                                    loading={loading && target === activity.id} //provides loading indicator
                                     onClick={(e) => handleActivityDelete(e, activity.id)} 
                                     floated='right' 
                                     content='Delete' 

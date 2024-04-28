@@ -16,7 +16,7 @@ function App() {
     activityStore.loadActivities();
   }, [activityStore]) 
 
-  if (activityStore.loadingInitial) return <LoadingComponent content='Loading app' />
+  if (activityStore.loadingInitial) return <LoadingComponent content='Loading app' /> //Displays "Loading..." on screen
 
   return (
     <>
